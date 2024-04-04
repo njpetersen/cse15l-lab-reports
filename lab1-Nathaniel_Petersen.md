@@ -1,5 +1,9 @@
-Command "cd"
+Command "cd" - changes the current working directory
 No arguments example:
+![Image](example1.jpg)
+
+With no arguments, the cd command does nothing, the current working directory is unchanged
+
 
 Path to a directory as argument example:
 
