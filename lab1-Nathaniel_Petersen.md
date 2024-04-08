@@ -11,10 +11,13 @@ Path to a file as argument example:
 
 Command "ls"
 No arguments example:
+![Image](example4.jpg)
 
 Path to a directory as argument example:
+![Image](example5.jpg)
 
 Path to a file as argument example:
+![Image](example6.jpg)
 
 Command "cat"
 No arguments example:
