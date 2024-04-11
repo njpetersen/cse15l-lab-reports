@@ -33,13 +33,15 @@ The `cd` command with the file `Hello.java` supplied as an argument is then run.
 
 This time, an error message appears in the terminal, stating `Hello.java: Not a Directory`. As the error message suggests, this error occured because `cd` cannot change the current working directory to anything other than a directory, including java files.
 
-# Command "ls"
+# Command "ls" - lists out files in a directory
 ## No arguments example:
 ![Image](example4.jpg)
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
-The `ls` command with no arguments is then run. The terminal outputs a list containing the 
+The `ls` command with no arguments is then run. The terminal then outputs `Hello.class Hello.java README messages`, which is a list of all the files contained in `lecture1`. In this case, the `ls` command with no arguments simply lists out all the files stored in the current working directory, ie, `/Users/nathanielpetersen/lecture1`
+
+There is no additional output to indicate that this behavior is an error.
 
 
 ## Path to a directory as argument example:
@@ -47,7 +49,10 @@ The `ls` command with no arguments is then run. The terminal outputs a list cont
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
-With the path to a directory as a argument, "ls" reads out the contents of the given directory.
+The `ls` command with the path to a directory `/Users/nathanielpetersen/lecture1/messages` supplied as an argument is then run. The terminal then outputs `en-us.txt es-mx.txt zh-cn.txt`, which is a list of all the files contained in the directory `messages`. Similar to when no arguments are supplies, the `ls` command supplied with a directory will list out the files contained in that directory.
+
+There is no additional output to indicate that this behavior is an error.
+
 
 ## Path to a file as argument example:
 ![Image](example6.jpg)
