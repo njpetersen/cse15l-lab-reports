@@ -49,7 +49,7 @@ There is no additional output to indicate that this behavior is an error.
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
-The `ls` command with the path to a directory `/Users/nathanielpetersen/lecture1/messages` supplied as an argument is then run. The terminal then outputs `en-us.txt es-mx.txt zh-cn.txt`, which is a list of all the files contained in the directory `messages`. Similar to when no arguments are supplies, the `ls` command supplied with a directory will list out the files contained in that directory.
+The `ls` command with the path to a directory (`/Users/nathanielpetersen/lecture1/messages`) supplied as an argument is then run. The terminal then outputs `en-us.txt es-mx.txt zh-cn.txt`, which is a list of all the files contained in the directory `messages`. Similar to when no arguments are supplies, the `ls` command supplied with a directory will list out the files contained in that directory.
 
 There is no additional output to indicate that this behavior is an error.
 
@@ -59,15 +59,21 @@ There is no additional output to indicate that this behavior is an error.
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
-With the path to a file as an argument, "ls" seems to repeat the argument provided, ie the path to the file or the file's name
+To demonstrate the difference in output between running `ls` with no argument and `ls` with the path to a file, `ls` is then run with no arguments, supplying the expected output `Hello.class Hello.java README messages`.
 
-# Command "cat"
+The `ls` command with the path to a file (`/Users/nathanielpetersen/lecture/README`) supplied as an argument is then run. The terminal outputs `/Users/nathanielpetersen/lecture/README`, which is the same file path we gave as an input. Running the `ls` command again with the file `README` supplied directly return the output `README`. This suggests that running the ls command with the path to a file as a argument simply returns the given argument. This is likely because the only file stored in a non-directory file is itself.
+
+There is no additional output to indicate that this bahavior is an error. However, I do find it interesting that the argument is returned as opposed to the file ultimately being referenced by the argument.
+
+# Command "cat" - outputs the contents of a file
 ## No arguments example:
 ![Image](example7.jpg)
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
-With no arguments the "cat" command places the terminal into a mode where every key on the keyboard is logged to some collection of characters, such as the up arrow key being mapped to "^[[A".
+The `cat` command with no arguments is then run. With no arguments, the `cat` command places the terminal into a mode where every key on the keyboard is logged to some collection of characters, such as the up arrow key being mapped to "^[[A".
+
+This is probably not an error. While when no argument is provided the `cat` command obviously has no file to read the contents of, unlike an example we will see later, no error message is provided, the terminal is simply put into the key-logging mode. 
 
 ## Path to a directory as argument example:
 ![Image](example8.jpg)
