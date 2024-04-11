@@ -1,6 +1,6 @@
 Command "cd" - changes the current working directory
 No arguments example:
-![Image](https://njpetersen.github.io/cse15l-lab-reports/example1.jpg)
+![Image](https://njpetersen.githubio/cse15l-lab-reports/example1.jpg)
 
 With no arguments, the cd command does nothing, the current working directory is unchanged
 
