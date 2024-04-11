@@ -7,7 +7,11 @@ With no arguments, the cd command does nothing, the current working directory is
 
 Path to a directory as argument example:
 
+![Image](example2.jpg)
+
 Path to a file as argument example:
+
+![Image](example2.jpg)
 
 Command "ls"
 No arguments example:
