@@ -4,7 +4,11 @@
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
-The `cd` command with no arguments is then run, with no output indicating an error or any output in general. However, checking our current working directory with the `pwd` command shows that our current working directory has been changed to our home directory. This shows that using the `cd` command with no arguments results in our current working directory being changed to our home directory.
+The `cd` command with no arguments is then run.
+
+There is no output indicating an error nor any output in general. 
+
+However, checking our current working directory with the `pwd` command shows that our current working directory has been changed to our home directory. This shows that using the `cd` command with no arguments results in our current working directory being changed to our home directory.
 
 
 ## Path to a directory as argument example:
@@ -13,11 +17,21 @@ The `cd` command with no arguments is then run, with no output indicating an err
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
+The `cd` command with the directory `messages` supplied as an argument is then run. 
+
+Once again, no output is provided, including any output indicating an error. 
+
+We can see that the `cd` command worked by running the `pwd` command, which shows us that the current working directory has been switched from `/Users/nathanielpetersen/lecture1` to `/Users/nathanielpetersen/lecture1/messages`. This shows that using the `cd` command with a directory supplied as its argument results in the current working directory being switched to the newly supplied directory.
+
 ## Path to a file as argument example:
 
 ![Image](example3.jpg)
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
+
+The `cd` command with the file `Hello.java` supplied as an argument is then run. 
+
+This time, an error message appears in the terminal, stating `Hello.java: Not a Directory`. As the error message suggests, this error occured because `cd` cannot change the current working directory to anything other than a directory, including java files.
 
 # Command "ls"
 ## No arguments example:
@@ -25,7 +39,7 @@ In the code example above, the current working directory is first set to `/Users
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
-With no arguments, the "ls" command simply reads out the contents of the current working directory, in this case, the contents of lecture1.
+The `ls` command with no arguments is then run. The terminal outputs a list containing the 
 
 
 ## Path to a directory as argument example:
@@ -63,11 +77,3 @@ With a path to a directory as the argument, "cat" returns a message stating that
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
 With a path to a file as the argument, "cat" reads out the text contents of that file.
-
-
-This is a cow
-
-![Image](Cow_female_black_white.jpg)
-
-
-
