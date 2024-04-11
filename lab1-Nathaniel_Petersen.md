@@ -1,3 +1,6 @@
+# Introduction
+Hello, I'm Nathaniel Petersen, PID A17832207, and this page explores the uses of the `cd`, `ls` and `cat` commands.
+
 # Command "cd" - changes the current working directory
 ## No arguments example:
 ![Image](example1.jpg)
