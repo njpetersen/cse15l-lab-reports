@@ -73,18 +73,22 @@ In the code example above, the current working directory is first set to `/Users
 
 The `cat` command with no arguments is then run. With no arguments, the `cat` command places the terminal into a mode where every key on the keyboard is logged to some collection of characters, such as the up arrow key being mapped to "^[[A".
 
-This is probably not an error. While when no argument is provided the `cat` command obviously has no file to read the contents of, unlike an example we will see later, no error message is provided, the terminal is simply put into the key-logging mode. 
+This is probably not an error. While when no argument is provided the `cat` command obviously has no file to read the contents of, unlike an example we will see later, no error message is provided, the terminal is simply put into the key-logging mode, suggesting this may be an intended feature of `cat`. 
 
 ## Path to a directory as argument example:
 ![Image](example8.jpg)
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
-With a path to a directory as the argument, "cat" returns a message stating that the argument given is a directory. 
+The `cat` command is then run with the directory `messages` as its argument.
+
+With a path to a directory as the argument, `cat` returns an error message stating `cat: messages: Is a directory`. As the error message suggests, this error occured because `cat` reads the contents of a normal, non-directory file, and the supplied argument leads to a directory, which `cat` cannot read.
 
 ## Path to a file as argument example:
 ![Image](example9.jpg)
 
 In the code example above, the current working directory is first set to `/Users/nathanielpetersen/lecture1`
 
-With a path to a file as the argument, "cat" reads out the text contents of that file.
+The `cat` command is then run three times, each time using one of the files contained in `lecture1/messages` as shown in the `ls` command run right before as an argument. The first time, the file `en-us.txt` is supplied as an argument, and the output reads `Hello World!`. The second time, `es-mx.txt` is supplied, and the output reads `¡Hola Mundo!`. Lastly, the file `zh-cn.txt` is supplied, and the output reads `你好世界`. In all three cases, running `cat` with a file supplied as its argument resulted in the content of the file being output into the terminal.
+
+There is no additional output to indicate that this behavior is an error.
